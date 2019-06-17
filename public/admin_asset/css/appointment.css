@@ -1,0 +1,185 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+* {
+  margin: 0;
+  padding: 0; }
+
+/*use variable declaration start*/
+body, a, span, ul, li, p, h1, h2, h3, h4, h5, h6, button, input, img, i {
+  transition: all .5s ease; }
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px; }
+
+a, a:hover, button {
+  text-decoration: none !important;
+  outline: none !important; }
+
+/*HEADER START*/
+.header-top {
+  background: #1c1d17;
+  color: #fff;
+  padding: 10px 0; }
+  .header-top .header-left {
+    width: 100%; }
+    .header-top .header-left p {
+      text-align: center;
+      color: color-yellow;
+      font-size: 25px; }
+    .header-top .header-left .header-item {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%; }
+      .header-top .header-left .header-item svg.svg-inline--fa.fa-map-marker-alt.fa-w-12, .header-top .header-left .header-item svg.svg-inline--fa.fa-clock.fa-w-16, .header-top .header-left .header-item svg.svg-inline--fa.fa-phone-square.fa-w-14, .header-top .header-left .header-item svg.svg-inline--fa.fa-globe-europe.fa-w-16, .header-top .header-left .header-item svg.svg-inline--fa.fa-phone.fa-w-16, .header-top .header-left .header-item svg.svg-inline--fa.fa-envelope.fa-w-16, .header-top .header-left .header-item svg.svg-inline--fa.fa-facebook-f.fa-w-9 {
+        color: #ff9900;
+        margin-right: 5px; }
+
+/*heder end*/
+/*appointment start*/
+#section-appointment {
+  padding: 20px 0; }
+  #section-appointment .tab-main form .theme-text {
+    color: #ff9900;
+    font-size: 14px; }
+  #section-appointment .tab-main form .form-group .full-name {
+    padding-right: 0; }
+  #section-appointment .tab-main form .booking-service-info .booking-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    #section-appointment .tab-main form .booking-service-info .booking-info div {
+      /*color: $color-yellow;*/ }
+  #section-appointment .tab-main form .booking-service-info .slick-intialized {
+    width: 100%; }
+    #section-appointment .tab-main form .booking-service-info .slick-intialized .polite {
+      width: 100%;
+      display: flex;
+      margin: 10px 0; }
+      #section-appointment .tab-main form .booking-service-info .slick-intialized .polite .item-polite {
+        border: 1px solid rgba(0, 0, 0, 0.3);
+        text-align: center; }
+        #section-appointment .tab-main form .booking-service-info .slick-intialized .polite .item-polite .day-in-week {
+          font-size: 18px;
+          font-weight: 700; }
+      #section-appointment .tab-main form .booking-service-info .slick-intialized .polite .list-1 {
+        margin-left: -15px; }
+      #section-appointment .tab-main form .booking-service-info .slick-intialized .polite .list-2 {
+        margin: 0 -7px; }
+      #section-appointment .tab-main form .booking-service-info .slick-intialized .polite .list-3 {
+        margin-right: -15px; }
+      #section-appointment .tab-main form .booking-service-info .slick-intialized .polite .active {
+        background-color: #f3c27ab8; }
+  #section-appointment .tab-main form .booking-service-info #operatorSeting p {
+    color: #ff9900; }
+  #section-appointment .tab-main form .booking-service-info #operatorSeting .choose-user {
+    display: flex; }
+  #section-appointment .tab-main form .booking-service-info #selectTime ul {
+    justify-content: space-between; }
+    #section-appointment .tab-main form .booking-service-info #selectTime ul li {
+      border: 1px solid #f3c27ab8;
+      border-radius: 4px;
+      text-align: center; }
+      #section-appointment .tab-main form .booking-service-info #selectTime ul li a {
+        color: black;
+        padding: 10px 0 !important; }
+  #section-appointment .tab-main form .booking-service-info #selectTime .time-main #time-select {
+    margin-top: 16px;
+    color: #ff9900; }
+  #section-appointment .tab-main form .booking-service-info #selectTime .time-main .timeFrame .box-content button {
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    display: inline-block;
+    margin-bottom: 10px; }
+  #section-appointment .tab-main form #productSetting .choose-title {
+    color: #ff9900; }
+  #section-appointment .tab-main form .book {
+    background-color: #f3c27ab8; }
+  #section-appointment .tab-main form .current {
+    background-color: #f3c27ab8; }
+
+/*appointment end*/
+/*FOOTER START*/
+footer {
+  background: url(../img/footer.jpg) no-repeat center center;
+  background-size: cover;
+  color: #fff;
+  position: relative; }
+  footer .go-up {
+    font-size: 30px;
+    position: fixed;
+    z-index: 9999999;
+    left: 90%;
+    bottom: 40px;
+    cursor: pointer;
+    display: none;
+    width: 50px;
+    height: 50px;
+    border: 1px solid #ff9900;
+    background-color: #fff;
+    text-align: center;
+    line-height: 50px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-transition: all 0.34s linear;
+    -moz-transition: all 0.4s ease;
+    -ms-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease; }
+    footer .go-up:hover {
+      background-color: #ff9900; }
+      footer .go-up:hover .fa-arrow-up {
+        top: 40%; }
+    footer .go-up .fa-arrow-up {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: black;
+      font-size: 18px;
+      -webkit-transition: all 0.34s linear;
+      -moz-transition: all 0.4s ease;
+      -ms-transition: all 0.4s ease;
+      -o-transition: all 0.4s ease;
+      transition: all 0.4s ease; }
+  footer .widget {
+    margin-bottom: 30px; }
+    footer .widget h4 {
+      font-size: 16px;
+      font-weight: 700; }
+    footer .widget hr {
+      width: 60px;
+      border-top: 2px solid #ff9900; }
+    footer .widget li:hover a {
+      color: #ff9900; }
+    footer .widget .link-widget ul li {
+      justify-content: space-between;
+      display: flex; }
+    footer .widget .nav-link {
+      color: #fff;
+      padding: 0; }
+    footer .widget .recent-post-widget {
+      display: flex; }
+      footer .widget .recent-post-widget a {
+        color: #fff; }
+        footer .widget .recent-post-widget a img {
+          width: 100%; }
+        footer .widget .recent-post-widget a:hover {
+          color: #ff9900; }
+
+/*FOOTER END*/
+/*REPONSIVE TABLET  START*/
+@media (min-width: 575px) and (max-width: 768px) {
+  .header-top .header-left {
+    font-size: 10px !important; } }
+/*REPONSIVE TABLET  END*/
+/*REPONSIVE DESKTOP MIN START*/
+@media (min-width: 768px) and (max-width: 991px) {
+  /* heaer end*/ }
+/*REPONSIVE DESKTOP END*/
+/*REPONSIVE DESKTOP MAX*/
+
+/*# sourceMappingURL=appointment.css.map */

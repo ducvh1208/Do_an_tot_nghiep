@@ -1,0 +1,379 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat|Roboto&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/*use variable declaration start*/
+body, a, span, ul, li, p, h1, h2, h3, h4, h5, h6, button, input, img, i {
+  transition: all .5s ease;
+}
+
+body {
+  overflow-y: scroll;
+  overflow-x: hidden;
+  font-family: "Roboto", sans-serif;
+}
+
+a, a:hover, button {
+  text-decoration: none !important;
+  outline: none !important;
+}
+/*use variable declaration end*/
+/*HEADER START*/
+.header-top {
+  background-color: #1c1d17;
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  display: none;
+}
+.header-top .icon .fa-facebook-square {
+  margin-left: 0;
+}
+.header-top .icon .fa-facebook-square, .header-top .icon .fa-google-plus-square, .header-top .icon .fa-twitter-square {
+  color: #fff;
+  margin-left: 15px;
+  font-size: 34px;
+}
+.header-top .line-right {
+  border-left: 1px solid #f6ededc9;
+}
+.header-top .line-left {
+  border-left: 1px solid #f6ededc9;
+  border-right: 1px solid #f6ededc9;
+}
+
+.header-main {
+  font-family: "Montserrat", sans-serif;
+}
+.header-main img {
+  width: 80px;
+}
+.header-main .navbar-dark .navbar-nav .nav-link {
+  color: #fff;
+}
+.header-main ul li .active {
+  color: #ff9900 !important;
+}
+.header-main ul li a {
+  position: relative;
+  color: #fff;
+}
+.header-main ul li a::before {
+  content: "";
+  position: absolute;
+  width: 45px;
+  left: 50%;
+  height: 2px;
+  background: #ff9900;
+  transform: translateX(-50%) scale(0);
+  bottom: 4px;
+  transition: all .3s ease;
+}
+.header-main ul li a:hover::before {
+  transform: translateX(-50%) scale(1);
+}
+.header-main ul li button a::before {
+  width: 0;
+  content: "";
+}
+.header-main ul li .btn-appointment {
+  background-color: #ff9900;
+  border-radius: 5px;
+}
+.header-main ul li:hover a {
+  color: #ff9900;
+}
+.header-main ul li:hover .btn-appointment {
+  color: #fff;
+  background-color: #ffb84d;
+}
+.header-main ul li a.btn-appointment::before {
+  width: 0;
+}
+
+/*HEADER END*/
+/*FOOTER START*/
+footer {
+  background: url(../../images/footer.jpg) no-repeat center center;
+  background-size: cover;
+  color: #fff;
+  position: relative;
+}
+footer .go-up {
+  font-size: 30px;
+  position: fixed;
+  z-index: 9999999;
+  right: 5%;
+  bottom: 20px;
+  cursor: pointer;
+  display: none;
+  width: 50px;
+  height: 50px;
+  border: 1px solid #ff9900;
+  background-color: #fff;
+  text-align: center;
+  line-height: 50px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-transition: all 0.34s linear;
+  -moz-transition: all 0.4s ease;
+  -ms-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+footer .go-up:hover {
+  background-color: #ff9900;
+}
+footer .go-up:hover .fa-arrow-up {
+  top: 40%;
+}
+footer .go-up .fa-arrow-up {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: black;
+  font-size: 18px;
+  -webkit-transition: all 0.34s linear;
+  -moz-transition: all 0.4s ease;
+  -ms-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+footer .widget {
+  margin-bottom: 30px;
+  width: 100%;
+}
+footer .widget h4 {
+  font-size: 16px;
+  font-weight: 700;
+}
+footer .widget hr {
+  width: 60px;
+  border-top: 2px solid #ff9900;
+}
+footer .widget li:hover a {
+  color: #ff9900;
+}
+footer .widget .about-widget .btn-subscrite {
+  padding: 10px;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 6px;
+  outline: none;
+  border: none;
+  background: #ca0909;
+  color: #fff;
+}
+footer .widget .about-widget .btn-subscrite:hover {
+  background: red;
+}
+footer .widget .about-widget ul li p {
+  font-size: 18px;
+  padding-bottom: 10px;
+}
+footer .widget .about-widget ul li .fa-map-marker-alt, footer .widget .about-widget ul li .fa-envelope, footer .widget .about-widget ul li .fa-phone {
+  color: #ff9900;
+  margin-right: 10px;
+}
+footer .widget .link-widget ul li {
+  justify-content: space-between;
+  display: flex;
+}
+footer .widget .nav-link {
+  color: #fff;
+  padding: 0;
+}
+footer .widget .recent-post-widget {
+  display: flex;
+}
+footer .widget .recent-post-widget a {
+  color: #fff;
+}
+footer .widget .recent-post-widget a img {
+  width: 100%;
+  height: 80px;
+}
+footer .widget .recent-post-widget a:hover {
+  color: #ff9900;
+}
+footer .coppy-right {
+  margin: -15px;
+  font-size: 15px;
+  text-align: center;
+}
+
+/*FOOTER END*/
+/*share start*/
+.share {
+  width: 40px;
+  height: 40px;
+  position: fixed;
+  top: 22%;
+  left: 1%;
+  border-radius: 50%;
+  transition: .5s ease-in-out;
+  transform: translate(0, 0);
+  z-index: 5;
+}
+.share img#click-show-share {
+  width: 90%;
+  height: 90%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  transition: .3s ease-in-out;
+  z-index: 333333333;
+  cursor: pointer;
+  background: white;
+  box-shadow: rgba(0, 0, 0, 0.4) 2px 2px 3px 2px;
+  padding: 4px;
+  box-sizing: border-box;
+  border: 1px solid black;
+}
+.share img#click-show-share:hover {
+  transform: rotate(180deg);
+  left: 40%;
+  top: 25%;
+}
+.share .share-in {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  border-radius: 50%;
+  transform: translate(0, 0);
+  border: 1px solid black;
+  text-decoration: none;
+  color: black;
+  background: white;
+  opacity: 0;
+  visibility: hidden;
+  transition: transform .3s .3s ease-in-out;
+}
+.share .share-in:hover {
+  color: #ff9900;
+  background: #2980b9;
+}
+
+/****************share end*************************/
+/*js share*/
+.show-share-in {
+  left: 20px;
+  transform: translate(0, 200px);
+}
+.show-share-in #click-show-share {
+  transform: rotate(45deg);
+  width: 100%;
+  height: 100%;
+}
+.show-share-in #click-show-share:hover {
+  transform: rotate(0deg);
+}
+
+.show-share-in .share-in:nth-child(1) {
+  transform: translate(-10px, -55px);
+}
+
+.show-share-in .share-in:nth-child(2) {
+  transform: translate(35px, -40px);
+}
+
+.show-share-in .share-in:nth-child(3) {
+  transform: translate(55px, 0px);
+}
+
+.show-share-in .share-in:nth-child(4) {
+  transform: translate(35px, 40px);
+}
+
+.show-share-in .share-in:nth-child(5) {
+  transform: translate(-10px, 55px);
+}
+
+.show-share-in .share-in:nth-child(1),
+.show-share-in .share-in:nth-child(2),
+.show-share-in .share-in:nth-child(3),
+.show-share-in .share-in:nth-child(4),
+.show-share-in .share-in:nth-child(5) {
+  opacity: 1;
+  visibility: visible;
+}
+
+/*FOOTER END*/
+/*REPONSIVE TABLET  START*/
+@media (min-width: 575px) and (max-width: 768px) {
+  /*HAEDER*/
+  .header-main ul {
+    text-align: center;
+  }
+}
+
+/*REPONSIVE DESKTOP MIN START*/
+@media (min-width: 768px) and (max-width: 991px) {
+  .header-main li {
+    font-size: 18px;
+  }
+  .header-main li a.nav-link {
+    padding: 5px !important;
+  }
+  p.text-second {
+    margin-top: 15px !important;
+  }
+  /* heaer end*/
+}
+/*REPONSIVE DESKTOP END*/
+/*REPONSIVE DESKTOP MAX*/
+@media (min-width: 992px) {
+  /*header start*/
+  .header-top {
+    height: 50px;
+    display: block;
+    font-size: 18px;
+  }
+  .header-top .icon {
+    padding-top: 7px;
+  }
+  .header-top .icon svg.svg-inline--fa.fa-facebook-square.fa-w-14:hover, .header-top .icon svg.svg-inline--fa.fa-google-plus-square.fa-w-14:hover, .header-top .icon svg.svg-inline--fa.fa-twitter-square.fa-w-14:hover {
+    color: #ff9900;
+  }
+  .header-top .icon, .header-top .line-right, .header-top .line-left {
+    height: 50px;
+    text-align: center;
+    border-left: 1px solid #fff;
+    border-right: 1px solid #fff;
+    line-height: 50px;
+    width: 40px;
+  }
+  .header-top .line-right {
+    border-left: none;
+    border-right: none;
+  }
+  .header-main li {
+    font-size: 20px !important;
+    margin-left: auto;
+  }
+  p.text-second {
+    margin-top: 30px !important;
+  }
+}
+
+/*xet cho anh man hinh desktop trang store*/

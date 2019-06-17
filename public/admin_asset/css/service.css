@@ -1,0 +1,301 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/*use variable declaration start*/
+body, a, span, ul, li, p, h1, h2, h3, h4, h5, h6, button, input, img, i {
+  transition: all .5s ease;
+}
+
+body {
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+a, a:hover, button {
+  text-decoration: none !important;
+  outline: none !important;
+}
+
+/*use variable declaration end*/
+/*HEADER START*/
+.header-top {
+  background-color: #1c1d17;
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  height: 70px;
+  line-height: 70px;
+  font-size: 14px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  display: none;
+}
+.header-top .icon .fa-facebook-square {
+  margin-left: 0;
+}
+.header-top .icon .fa-facebook-square, .header-top .icon .fa-google-plus-square, .header-top .icon .fa-twitter-square {
+  color: #fff;
+  margin-left: 15px;
+  font-size: 34px;
+}
+.header-top .line-right {
+  border-left: 1px solid #f6ededc9;
+}
+.header-top .line-left {
+  border-left: 1px solid #f6ededc9;
+  border-right: 1px solid #f6ededc9;
+}
+
+.header-main .text-logo {
+  color: #ff9900;
+}
+.header-main .navbar-dark .navbar-nav .nav-link {
+  color: #fff;
+}
+.header-main .fixed-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 99999;
+}
+.header-main ul li {
+  margin-left: 20px;
+}
+.header-main ul li .active {
+  color: #ff9900 !important;
+}
+.header-main ul li a {
+  position: relative;
+}
+.header-main ul li a::before {
+  content: "";
+  position: absolute;
+  width: 45px;
+  left: 50%;
+  height: 2px;
+  background: #ff9900;
+  transform: translateX(-50%) scale(0);
+  bottom: 4px;
+  transition: all .3s ease;
+}
+.header-main ul li a:hover::before {
+  transform: translateX(-50%) scale(1);
+}
+.header-main ul li button a::before {
+  width: 0;
+  content: "";
+}
+.header-main ul li .btn-appointment {
+  background-color: #ff9900;
+}
+.header-main ul li:hover a {
+  color: #ff9900;
+}
+.header-main ul li:hover .btn-appointment {
+  color: #fff;
+  background-color: #ffb84d;
+}
+
+/*HEADER END*/
+/*SERVICE START */
+.wap-service {
+  padding: 50px 0;
+}
+.wap-service ul {
+  list-style-type: none;
+}
+.wap-service ul li {
+  cursor: pointer;
+}
+.wap-service .service-left {
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 2px;
+}
+.wap-service .service-left .current {
+  background-color: #337ab7;
+  color: #fff;
+}
+.wap-service .service-left li {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  margin: 0 -15px;
+  padding: 10px;
+  -webkit-transition: all 0.4s linear;
+  -moz-transition: all 0.4s ease;
+  -ms-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+.wap-service .service-left li:last-child {
+  border-bottom: none;
+}
+.wap-service .service-left li a {
+  color: black;
+  text-decoration: none;
+}
+.wap-service .service-content {
+  overflow: hidden;
+}
+.wap-service .service-content .service-item {
+  border: 1px dashed rgba(0, 0, 0, 0.1);
+  border-bottom: none;
+  padding: 10px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wap-service .service-content .service-item:last-child {
+  border-bottom: 1px dashed rgba(0, 0, 0, 0.1);
+}
+.wap-service .service-content .service-item p {
+  margin: 0;
+}
+
+/*SERVICE END */
+/*FOOTER START*/
+footer {
+  background: url(../img/footer.jpg) no-repeat center center;
+  background-size: cover;
+  color: #fff;
+  position: relative;
+}
+footer .go-up {
+  font-size: 30px;
+  position: fixed;
+  z-index: 9999999;
+  left: 90%;
+  bottom: 40px;
+  cursor: pointer;
+  display: none;
+  width: 50px;
+  height: 50px;
+  border: 1px solid #ff9900;
+  background-color: #fff;
+  text-align: center;
+  line-height: 50px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-transition: all 0.34s linear;
+  -moz-transition: all 0.4s ease;
+  -ms-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+footer .go-up:hover {
+  background-color: #ff9900;
+}
+footer .go-up:hover .fa-arrow-up {
+  top: 40%;
+}
+footer .go-up .fa-arrow-up {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: black;
+  font-size: 18px;
+  -webkit-transition: all 0.34s linear;
+  -moz-transition: all 0.4s ease;
+  -ms-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+footer .widget {
+  margin-bottom: 30px;
+}
+footer .widget h4 {
+  font-size: 16px;
+  font-weight: 700;
+}
+footer .widget hr {
+  width: 60px;
+  border-top: 2px solid #ff9900;
+}
+footer .widget li:hover a {
+  color: #ff9900;
+}
+footer .widget .link-widget ul li {
+  justify-content: space-between;
+  display: flex;
+}
+footer .widget .nav-link {
+  color: #fff;
+  padding: 0;
+}
+footer .widget .recent-post-widget {
+  display: flex;
+}
+footer .widget .recent-post-widget a {
+  color: #fff;
+}
+footer .widget .recent-post-widget a img {
+  width: 100%;
+}
+footer .widget .recent-post-widget a:hover {
+  color: #ff9900;
+}
+
+/*FOOTER END*/
+/*REPONSIVE TABLET  START*/
+@media (min-width: 575px) and (max-width: 768px) {
+  /*HAEDER*/
+  .header-main ul {
+    text-align: center;
+  }
+  .header-main ul li .btn a {
+    padding-left: 150px;
+    padding-right: 150px;
+  }
+}
+/*REPONSIVE TABLET  END*/
+/*REPONSIVE DESKTOP MIN START*/
+@media (min-width: 768px) and (max-width: 991px) {
+  .header-main li {
+    margin-left: 11px !important;
+  }
+  .header-main li a.nav-link {
+    padding: 0 !important;
+  }
+
+  /* heaer end*/
+}
+/*REPONSIVE DESKTOP END*/
+/*REPONSIVE DESKTOP MAX*/
+@media (min-width: 992px) {
+  .header-top {
+    height: 70px;
+    display: block;
+  }
+  .header-top .icon {
+    padding-top: 8px;
+    text-align: center;
+  }
+  .header-top .icon svg.svg-inline--fa.fa-facebook-square.fa-w-14:hover, .header-top .icon svg.svg-inline--fa.fa-google-plus-square.fa-w-14:hover, .header-top .icon svg.svg-inline--fa.fa-twitter-square.fa-w-14:hover {
+    color: #ff9900;
+  }
+  .header-top .icon, .header-top .line-right, .header-top .line-left {
+    height: 70px;
+    text-align: center;
+    border-left: 1px solid #fff;
+    border-right: 1px solid #fff;
+    line-height: 70px;
+    width: 40px;
+  }
+  .header-top .line-right {
+    border-left: none;
+    border-right: none;
+  }
+
+  .header-main li {
+    font-size: 18px !important;
+  }
+}
+
+/*# sourceMappingURL=service.css.map */
